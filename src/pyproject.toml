@@ -5,12 +5,22 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "sickle"
 version = "4.0.1"
-author = "Milton Valencia (wetw0rk)"
-requires-python = ">=3"
-dependencies = [
-    "keystone-engine>=0.9.2",
-    "capstone>=3.0.5"
+description = "Payload development framework"
+readme = "README.md"
+authors = [
+  { name = "Milton Valencia (wetw0rk)" }
 ]
+requires-python = ">=3.6"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.11",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/wetw0rk/Sickle"
 
 [project.scripts]
 sickle = "sickle.__main__:entry"
